@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Veuillez renseigner vos informations dans les champs ci-dessous</p>
+    <form action="../controller/register.php" method="post">
+        <label for="firstname">Prenom</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <label for="lastname">Nom de famille</label>
+        <input type="text" name="lastname" id="lastname" required>
+        <label for="address">Adresse</label>
+        <input type="text" name="address" id="address">
+        <label for="phone">Numero de telephone</label>
+        <input type="number" name="phone" id="phone">
+        <label for="email">Adresse E-mail</label>
+        <input type="text" name="email" id="email" required>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" required>
+        <label for="dob">Date de naissance</label>
+        <input type="date" name="dob" id="dob" required>
+        <input type="submit" name="register" value="Enregistrez Vous !">
+    </form>
+</body>
+</html>
