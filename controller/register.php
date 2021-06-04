@@ -1,4 +1,4 @@
-<?php require "../model/RegisterNewUSer.class.php" ?>
+<?php include "../autoloader.php" ?>
 <?php
 
 //Execution Code

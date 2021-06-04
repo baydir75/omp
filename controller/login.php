@@ -1,4 +1,4 @@
-<?php require "../model/LoginUser.class.php" ?>
+<?php require "../autoloader.php" ?>
 <?php
 session_start();
 

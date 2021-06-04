@@ -1,4 +1,4 @@
-<?php  require "../model/ViewPost.class.php" ?>
+<?php include "../autoloader.php" ?>
 <?php
 
     $blogPost = new ViewPost; 

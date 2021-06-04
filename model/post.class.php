@@ -1,4 +1,3 @@
-<?php include "../autoloader.php" ?>
 <?php require "database.php" ?>
 <?php
 

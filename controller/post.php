@@ -1,4 +1,4 @@
-<?php require "../model/post.class.php" ?>
+<?php include "../autoloader.php" ?>
 <?php
 
 if (isset($_POST["publishPost"])) {
