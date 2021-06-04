@@ -1,4 +1,5 @@
-<?php  "../model/database.php" ?>
+<?php include "../autoloader.php" ?>
+<?php require "database.php" ?>
 <?php
 
 class Post extends Database {

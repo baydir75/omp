@@ -1,4 +1,5 @@
-<?php require "../model/database.php" ?>
+<?php include "../autoloader.php" ?>
+<?php require "database.php" ?>
 <?php
 
 class LoginUser extends Database {

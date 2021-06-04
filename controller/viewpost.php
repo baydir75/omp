@@ -1,4 +1,4 @@
-<?php  require "../model/view.class.php" ?>
+<?php  require "../model/ViewPost.class.php" ?>
 <?php
 
     $blogPost = new ViewPost; 

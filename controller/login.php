@@ -1,4 +1,4 @@
-<?php require "../model/login.class.php" ?>
+<?php require "../model/LoginUser.class.php" ?>
 <?php
 session_start();
 

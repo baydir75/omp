@@ -1,4 +1,4 @@
-<?php require "../model/register.class.php" ?>
+<?php require "../model/RegisterNewUSer.class.php" ?>
 <?php
 
 //Execution Code
