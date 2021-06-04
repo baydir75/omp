@@ -1,16 +1,17 @@
 <?php include "../autoloader.php" ?>
 <?php
+session_start();
 
 if (isset($_POST["publishPost"])) {
+
+$newPost = new Post;
 
 $content = $_POST["content"];
 $image = $_FILES["image"];
 $title = $_POST["title"];
 $date = date("y-m-d"); 
-$author = "Baydir";
-//$author = $_SESSION["user"];
+$author = $_SESSION["prenom"] ." ". $_SESSION["nom"];
 
-$newPost = new Post;
 $newPost->setContent($content);
 $newPost->setImage($image);
 $newPost->setTitle($title);

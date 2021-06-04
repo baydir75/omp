@@ -1,5 +1,11 @@
+let $count = 0;
+
 $(document).ready(function() {
     $("button").click(function() {
-        $("#email").append("<form action='../controller/login.php' method='post'> <input type='text'> </form>");
+        if ($count == 0) {
+            $("#email").append("<form action='../controller/changeinformation.php' method='post'> <input type='text'> <input type='submit' value='Envoyer'> </form>");
+            $count++;
+            return $count;
+        }
     })
 })
