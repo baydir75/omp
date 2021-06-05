@@ -12,6 +12,7 @@ if (isset($_SESSION['email'])) {
     $change->setOldIntel($oldIntel);
     $change->setCI($changeInformation);
     $change->intel();
+    $_SESSION['email'] = $newIntel;
 
 }
 

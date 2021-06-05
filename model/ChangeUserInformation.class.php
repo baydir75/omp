@@ -13,7 +13,6 @@ class ChangeUserInformation extends Database {
             $sql = "UPDATE user SET email = ? WHERE email = ?";
             $query = $this->connect()->prepare($sql);
             $query->execute([$this->newIntel, $this->oldIntel]);
-            echo $this->newIntel, $this->oldIntel;
         }            
     }
 
