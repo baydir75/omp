@@ -1,21 +1,17 @@
-<?php require "database.php" ?>
+<?php require "../autoloader.php" ?>
 <?php
 session_start();
-class ChangeUserInformation extends Database {
-
-    private $firstName;
-    private $lastName;
-    private $email;
-    private $password;
-    private $dob;
-    private $phone;
-    public $address;
-
-    //fonction pour changer les informations utilisateurs
-
-    public function intel($intel) {
-        $intel = $_POST["id"];
-    }
+if (isset($_SESSION['email'])) {
+    echo "Hello There";
+    $connex = mysqli_connect('localhost', 'root', '', 'onzemillepotes');
+    $oldIntel = $_SESSION['email'];
+    $newIntel = $_POST['newIntel'];
+    $changeInformation = $_POST['changeInformation'];
+    $change = new ChangeUserInformation;
+    $change->setNewIntel($newIntel);
+    $change->setOldIntel($oldIntel);
+    $change->setCI($changeInformation);
+    $change->intel();
 
 }
 

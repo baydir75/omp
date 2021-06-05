@@ -21,7 +21,7 @@ session_start();
             <h2>Mes informations personnelles</h2>
             <p>Nom: <?php echo $_SESSION['nom'] ?></p>
             <p>Prenom: <?php echo $_SESSION['prenom'] ?></p>
-            <p id="email">Email: <?php echo $_SESSION['email'] ?></p><button>Modifier Email</button>
+            <p id="email">Email: <?php echo $_SESSION['email'] ?></p><button id="changeEmail">Modifier Email</button>
             <p>Adresse: <?php echo $_SESSION['address'] ?></p>
             <p>Numero de téléphone: <?php echo $_SESSION['phone'] ?></p>
             <p>Date de naissance: <?php echo $_SESSION['dob'] ?></p>
