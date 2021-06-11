@@ -2,7 +2,6 @@
 <?php
 session_start();
 if (isset($_SESSION['email'])) {
-    echo "Hello There";
     $connex = mysqli_connect('localhost', 'root', '', 'onzemillepotes');
     $oldIntel = $_SESSION['email'];
     $newIntel = $_POST['newIntel'];
@@ -12,6 +11,8 @@ if (isset($_SESSION['email'])) {
     $change->setOldIntel($oldIntel);
     $change->setCI($changeInformation);
     $change->intel();
+
+    //mettre une fonction ici
     $_SESSION['email'] = $newIntel;
 
 }
