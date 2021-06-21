@@ -1,6 +1,7 @@
 <?php require "database.php" ?>
 <?php
 
+/* Fonction pour que l'admin poste un article */
 class Post extends Database {
     private $content;
     private $title;

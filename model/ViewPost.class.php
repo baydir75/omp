@@ -1,6 +1,8 @@
 <?php require "database.php" ?>
 <?php 
 
+/* Fonction pour afficher les posts publiaient par les admins */
+
 class ViewPost extends Database {
     private $author;
     private $content;
@@ -9,6 +11,7 @@ class ViewPost extends Database {
     private $date;
     private $id;
 
+    /* Chercher les articles dans la base de données */
     public function getArticle() {
         
         $sql = "SELECT * FROM post";
@@ -34,6 +37,8 @@ class ViewPost extends Database {
                 }
             }
         }
+
+        /* Afficher l'article sur la page HTML */
 
         echo "<p>".$title."</p>";
         echo "<img src=".$image.">";

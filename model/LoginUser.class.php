@@ -10,6 +10,7 @@ class LoginUser extends Database {
             $query->execute([$email]);
             $check = $query->fetch();
             $hashPassword = $check['password'];
+            /* Fonction  */
             if (password_verify($password, $hashPassword)) {
                 $sql = "SELECT * FROM user";
                 $query = $this->connect()->prepare($sql);

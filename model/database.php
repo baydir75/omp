@@ -1,5 +1,6 @@
 <?php
 
+/* Connexion à la base de données */
 class Database {
     private $host = "localhost";
     private $user = "root";
